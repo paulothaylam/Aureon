@@ -23,7 +23,7 @@
         Toda barra de navegação fica nessa tag -->
         <nav class="navbar navbar-expand-lg">           
             <div class="container-fluid">
-                <a class="navbar-brand text-white text-font-aureon-logo text-logo-aureon" href="#">Aureon</a>
+                <a class="navbar-brand text-font-aureon-logo text-logo-aureon" href="#">Aureon</a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,7 +35,7 @@
                             <a class="nav-link text-white" href="#">Explorar Cursos</a>
                         </li>
                         <li class="navbar-item" aria-current="page">
-                            <a class="nav-link text-white" href="#">Minhas Abilidades</a>
+                            <a class="nav-link text-white" href="#">Minhas Habilidades</a>
                         </li>
                         <li class="navbar-item" aria-current="page">
                             <a class="nav-link text-white" href="#">Comunidade</a>
@@ -47,8 +47,8 @@
 
                     
                     <form class="d-flex ">
-                            <button class="btn btn-outline-success me-2" type="button"> Entrar </button>
-                            <button class="btn btn-sm btn-outline-secondary" type="button"> Criar Conta </button>
+                            <button class="btn btn-outline-secondary me-2" id="bnt-login" type="button"> Entrar </button>
+                            <button class="btn btn-sm btn-outline-secondary" id="bnt-register" type="button"> Criar Conta </button>
                     </form>
                 </div>
 
@@ -61,27 +61,27 @@
         -- TAG PRINCIPAL (main) -- 
         Para armazenar as informações mais importantes -->
         <main>
-            <div class="text-font-aureon-logo text-white text-center py-4 pb-5" id="welcome-text">
-                <p class="fs-1"> Seja bem vindo(a) ao </p>
-                <p class="display-1"> Aureon </p>
-                <p class="fs-5"> Descubra caminhos que você não sabia que existia </p>
+            <div class="container-fluid text-font-aureon-logo text-center py-4 pb-5 d-flex flex-column lh-1" id="welcome-text">
+                <div> <p class="fs-5 my-0"> Seja bem vindo(a) ao </p> </div>
+                <div id="welcome-logo"> <p class="my-0 py-0"> Aureon </p> </div>
+                <div> <p class="fs-5 my-0"> Descubra caminhos que você não sabia que existia </p> </div>
             </div>
 
 
-            <div class="d-flex pb-5 justify-content-center flex-wrap gap-3" id="home-btns">
-                <button class="bnt btn-style-aureon" type="button">
+            <div class="container-fluid d-flex justify-content-center flex-wrap pb-5  gap-3" id="home-btns">
+                <button class="bnt card-style-aureon" type="button">
                     <i class="bi bi-braces display-5 home-bnt-icons"></i>
                     <p class="fs-6 text-white"> Programação Criativa </p>
                 </button>
-                <button class="bnt btn-style-aureon" type="button">
+                <button class="bnt card-style-aureon" type="button">
                     <i class="bi bi-hand-index-thumb display-5 home-bnt-icons"></i>
                     <p class="fs-6 text-white pt-1"> Desing de Interface </p>
                 </button>
-                <button class="bnt btn-style-aureon" type="button">
+                <button class="bnt card-style-aureon" type="button">
                     <i class="bi bi-stars display-5 home-bnt-icons"></i>
                     <p class="fs-6 text-white pt-1"> Arte Generativa </p>
                 </button>
-                <button class="bnt btn-style-aureon" type="button">
+                <button class="bnt card-style-aureon" type="button">
                     <i class="bi bi-camera-reels display-5 home-bnt-icons"></i>
                     <p class="fs-6 text-white pt-1"> Edição de Vídeo </p>
                 </button>
@@ -89,7 +89,7 @@
 
             <div class="pb-5" id="featured-cards">
                 <div class="d-flex justify-content-between align-items-center" id="featured-cards-header">
-                    <p class="text-white fs-2 text-font-aureon-logo"> Cursos em destaque </p>
+                    <p class="fs-2 text-font-aureon-logo"> Cursos em destaque <span class="bi bi-stars"></span> </p>
 
                     <div id="featured-cards-header-buttons">
                         <button class="btn btn-featured-cards bi bi-caret-left-fill featured-cards-arrows" id="left-arrow"></button>
@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="d-flex px-3 gap-4" id="featured-cards-body">
-                    <button class="card bnt bnt-featured-card btn-style-aureon">
+                    <button class="card bnt bnt-featured-card card-style-aureon">
                         <img src="./assets/images/cards/ceumacard.jpg" alt="..." class="bnt-featured-card-thumb card-img-top mt-2 rounded">
                         
                         <div class="card-body text-white d-flex px-2 py-0 flex-column justify-content-between">
@@ -129,7 +129,7 @@
         </main>
         <!-- #endregion -->
         
-        <!-- #region
+        <!-- #region 
         -- RODAPE (footer) --
         Onde fica as informações extras do website -->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
@@ -144,7 +144,7 @@
 
             <a href="" class="  
                 col-md-4 mb-3 mb-md-0 me-md-auto text-logo-aureon
-                d-flex align-items-center justify-content-center text-white text-decoration-none text-font-aureon-logo">
+                d-flex align-items-center justify-content-center text-decoration-none text-font-aureon-logo">
                 Aureon
             </a>
 
