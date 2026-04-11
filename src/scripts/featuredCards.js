@@ -34,7 +34,7 @@ function addFeaturedCard(cardImgSrc, cardTitleName, profileName, profileIconSrc,
 
     // Imagem Thumbnail do card
     let cardThumb = document.createElement('img')
-    cardThumb.src = `./../../assets/images/cards/${cardImgSrc}`
+    cardThumb.src = `./assets/images/cards/${cardImgSrc}`
     cardThumb.classList = 'bnt-featured-card-thumb card-img-top mt-2 rounded'
     
     // Body do meu card
@@ -55,7 +55,7 @@ function addFeaturedCard(cardImgSrc, cardTitleName, profileName, profileIconSrc,
 
     let cardProfileIcon = document.createElement('img')
     cardProfileIcon.classList = 'my-0 py-0 rounded-pill img-fluid featured-card-prof-icon'
-    cardProfileIcon.src = `./../../assets/images/profile/${profileIconSrc}`
+    cardProfileIcon.src = `./assets/images/profile/${profileIconSrc}`
 
     let cardNickname = document.createElement('p')
     cardNickname.textContent = profileName
